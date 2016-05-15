@@ -30,10 +30,10 @@ function Prompt(props) {
 };
 
 Prompt.propTypes = {
-  header: React.PropTypes.string.isRequired,
-  username: React.PropTypes.string.isRequired,
-  onSubmitUser: React.PropTypes.func.isRequired,
-  onUpdateUser: React.PropTypes.func.isRequired,
+  header: PropTypes.string.isRequired,
+  username: PropTypes.string.isRequired,
+  onSubmitUser: PropTypes.func.isRequired,
+  onUpdateUser: PropTypes.func.isRequired,
 };
 
 module.exports = Prompt;

@@ -5,6 +5,7 @@ var styles = require('../styles');
 var UserDetails = require('../components/UserDetails');
 var UserDetailsWrapper = require('../components/UserDetailsWrapper');
 var MainContainer = require('./MainContainer');
+var Loading = require('./Loading')
 
 function StartOverButton() {
   return (
@@ -19,7 +20,7 @@ function StartOverButton() {
 function Results(props) {
   if (props.isLoading) {
     return (
-      <h1> Loading </h1>
+      <Loading text='One moment' speed={100}/>
     );
   }
   if (props.scores[0] === props.scores[1]) {

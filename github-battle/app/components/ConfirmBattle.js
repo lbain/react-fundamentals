@@ -5,10 +5,11 @@ var Link = require('react-router').Link;
 var UserDetailsWrapper = require('../components/UserDetailsWrapper');
 var UserDetails = require('../components/UserDetails');
 var MainContainer = require('./MainContainer');
+var Loading = require('./Loading')
 
 function ConfirmBattle(props) {
   if (props.isLoading === true) {
-    return <p> Loading </p>
+    return <Loading speed={500} text='Wait one moment' />;
   } else {
     return (
       <MainContainer>
